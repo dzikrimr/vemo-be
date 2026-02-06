@@ -60,4 +60,7 @@ report.[0-9]*.[0-9]*.[0-9]*.[0-9]*.json
 # Prisma migrations (database schema changes, managed separately)
 prisma/migrations
 
+# Seed file (contains sensitive demo credentials)
+prisma/seed.ts
+
 .prettierrc

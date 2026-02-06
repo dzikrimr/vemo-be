@@ -40,6 +40,21 @@ export class MaintenanceService {
     return maintenance;
   }
 
+  async updateStatus(id: number, status: 'SCHEDULED' | 'IN_PROGRESS' | 'COMPLETED' | 'CANCELLED') {
+    await this.findOne(id);
+
+    const updateData: any = { status };
+    
+    if (status === 'COMPLETED') {
+      updateData.completedDate = new Date();
+    }
+
+    return this.prisma.maintenance.update({
+      where: { id },
+      data: updateData,
+    });
+  }
+
   async complete(id: number, actualCost?: number, notes?: string) {
     await this.findOne(id);
 

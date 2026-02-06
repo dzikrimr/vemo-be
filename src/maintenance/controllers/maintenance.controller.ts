@@ -80,6 +80,25 @@ export class MaintenanceController {
   }
 
   /**
+   * Update status perawatan (SCHEDULED → IN_PROGRESS → COMPLETED → CANCELLED)
+   * @param id - ID perawatan yang akan diubah
+   * @param status - Status baru
+   * @returns Data perawatan yang telah diperbarui
+   */
+  @Patch(':id/status')
+  @UseGuards(JwtAuthGuard)
+  @ApiOperation({ summary: 'Update status perawatan' })
+  @ApiResponse({ status: 200, description: 'Status perawatan berhasil diperbarui' })
+  @ApiResponse({ status: 401, description: 'Unauthorized - Token JWT tidak valid' })
+  @ApiResponse({ status: 404, description: 'Perawatan tidak ditemukan' })
+  updateStatus(
+    @Param('id') id: string,
+    @Body() body: { status: 'SCHEDULED' | 'IN_PROGRESS' | 'COMPLETED' | 'CANCELLED' },
+  ) {
+    return this.maintenanceService.updateStatus(+id, body.status);
+  }
+
+  /**
    * Tandai perawatan sebagai selesai
    * @param id - ID perawatan yang akan diselesaikan
    * @param body - Data penyelesaian (biaya aktual dan catatan)
