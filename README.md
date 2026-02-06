@@ -1,4 +1,4 @@
-# 🚗 VEMO - Vehicle Monitoring & Booking System
+# VEMO - Vehicle Monitoring & Booking System
 
 <div align="center">
 
@@ -105,7 +105,7 @@ src/
 
 ## 📊 Activity Diagram
 
-![Activity Diagram](docs/diagrams/activity-diagram.png)
+![Activity Diagram](https://github.com/VEMO-Sekawan-Media-Test/vemo-be/blob/master/docs/activity_diagram.png)
 
 **Keterangan:**
 - Diagram alur aktivitas user dari login hingga proses pemesanan kendaraan
@@ -116,7 +116,7 @@ src/
 
 ## 🔄 Sequence Diagram
 
-![Sequence Diagram](docs/diagrams/sequence-diagram.png)
+![Sequence Diagram](https://github.com/VEMO-Sekawan-Media-Test/vemo-be/blob/master/docs/sequence_diagram.png)
 
 **Keterangan:**
 - Interaksi antara Frontend, Backend, dan Database
@@ -127,7 +127,7 @@ src/
 
 ## 🗄️ Physical Data Model
 
-![ERD](docs/diagrams/erd-diagram.png)
+![ERD](https://github.com/VEMO-Sekawan-Media-Test/vemo-be/blob/master/docs/physical_data_model.png)
 
 **Keterangan:**
 - Relasi antar tabel dalam database PostgreSQL
@@ -264,9 +264,9 @@ PORT=3000
 
 | Username | Password | Role | Description |
 |----------|----------|------|-------------|
-| `admin_vemo` | `V3m0@dm1n#2024!` | 👑 ADMIN | Full system access |
-| `manager_1` | `M4n@gerV3m0#Sec!` | 👤 APPROVER | Level 1 approval |
-| `director_2` | `D1r3ct0rP3rm!t#Key` | 👤 APPROVER | Level 2 approval |
+| `admin_vemo` | `password123` | 👑 ADMIN | Full system access |
+| `manager_1` | `password123` | 👤 APPROVER | Level 1 approval |
+| `director_2` | `password123` | 👤 APPROVER | Level 2 approval |
 
 ---
 
