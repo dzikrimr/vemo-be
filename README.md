@@ -2,8 +2,6 @@
 
 <div align="center">
 
-![VEMO Logo](https://raw.githubusercontent.com/your-repo/vemo/main/vemo-fe/public/images/vemo_ic.png)
-
 **Sistem monitoring dan pemesanan kendaraan untuk perusahaan penambangan nikel**  
 dengan multiple regions, branches, dan mining sites.
 
