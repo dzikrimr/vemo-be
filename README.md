@@ -5,13 +5,6 @@
 **Sistem monitoring dan pemesanan kendaraan untuk perusahaan penambangan nikel**  
 dengan multiple regions, branches, dan mining sites.
 
-[![NestJS](https://img.shields.io/badge/-NestJS-E0234E?style=for-the-badge&logo=nestjs)](https://nestjs.com/)
-[![PostgreSQL](https://img.shields.io/badge/-PostgreSQL-4169E1?style=for-the-badge&logo=postgresql)](https://www.postgresql.org/)
-[![Prisma](https://img.shields.io/badge/-Prisma-2D3748?style=for-the-badge&logo=prisma)](https://www.prisma.io/)
-[![JWT](https://img.shields.io/badge/-JWT-000000?style=for-the-badge&logo=json-web-tokens)](https://jwt.io/)
-
-[![Deploy on Railway](https://img.shields.io/badge/🚂-Deploy_on_Railway-0B0B0B?style=for-the-badge&logo=railway)](https://railway.app/)
-
 </div>
 
 ---
